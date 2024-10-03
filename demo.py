@@ -179,11 +179,11 @@ scenes = {"ball_smiles":{"measurement":"measurements/ball_on_smile.pt",
 
 
 
-# Reconstructed all Scenes
+# Reconstruct all Scenes
 for scene in scenes:
     reconstructed = estimate(measurements=scenes[scene])
     scenes[scene] = reconstructed
 
-# Reconstructed a single Scenes
+# Reconstruct a single Scenes
 # reconstructed, projected_measurement, occluders = estimate(measurements=scenes["real_chair"])
 
