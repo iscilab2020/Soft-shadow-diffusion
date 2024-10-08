@@ -184,6 +184,8 @@ for scene in scenes:
     reconstructed = estimate(measurements=scenes[scene])
     scenes[scene] = reconstructed
 
+
+torch.save(scenes, "reconstructed.pt")
 # Reconstruct a single Scenes
 # reconstructed, projected_measurement, occluders = estimate(measurements=scenes["real_chair"])
 
