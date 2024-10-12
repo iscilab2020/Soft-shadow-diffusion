@@ -31,10 +31,11 @@ We introduce **SSD**, a novel diffusion model for reconstructing 3D models  dire
 
 ### TODO
 
-- [X] Release model weights 
+
 - [X] Release the inference code.
-- [ ] Release the evaluation code.
-- [ ] Release training scripts for pretrain, sft and dpo.
+- [x] Release the evaluation code.
+- [X] Release training scripts
+- [] Release model weights 
 
 
 ### Setup
@@ -42,6 +43,8 @@ We introduce **SSD**, a novel diffusion model for reconstructing 3D models  dire
 Clone this repository and install required packages:
 
 ```shell
+conda create --name SSD -y
+conda activate SSD
 git clone git@github.com:iscilab2020/Soft-shadow-diffusion.git
 cd Soft-shadow-diffusion
 ```
@@ -63,13 +66,12 @@ pip install -e .
 
 ### Demo
 You can now run the demo
-Please not that the output of demo 
 
 ```shell
 python demo.py
 ```
 
-Please not that the output of demo is a dictionary. There are four real world shadow photographs being used for reconstruction.
+Please note that the output of demo is a dictionary. There are four real world shadow photographs being used for reconstruction.
 
 ```python
 scenes = {"ball_smiles":{"measurement":"measurements/ball_on_smile.pt",
@@ -90,8 +92,7 @@ measurements["mesh"] = (np.asarray(mesh.vertices), np.asarray(mesh.faces))
 measurements["scene"] = measurements["scene"] = scene_.cpu().numpy()
 ```
 
-If you have new measurement, you may include it in a similar format
-".pt" measurement are the processed image (1, 128, 128, 3) saved as torch.save(image, "m.pt")
+If you have new measurement, you may include it in a similar format. ".pt" measurement are the processed image (1, 128, 128, 3) saved as torch.save(image, "m.pt")
 
 As mentioned in the main paper, we use relative size of the occluder to estimate the location of the 3D object after reconstruction. 
 If you are only reconstructing the object casting shadows, this may not be neccessary
