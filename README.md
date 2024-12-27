@@ -35,7 +35,7 @@ We introduce **SSD**, a novel diffusion model for reconstructing 3D models  dire
 - [X] Release the inference code.
 - [x] Release the evaluation code.
 - [X] Release training scripts
-- [] Release model weights 
+- [x] Release model weights 
 
 
 ### Setup
@@ -48,6 +48,11 @@ conda activate SSD
 git clone git@github.com:iscilab2020/Soft-shadow-diffusion.git
 cd Soft-shadow-diffusion
 ```
+
+### Download Model Weights on Google Drive
+##Create Folder mkdir checkpoints
+## Download the wieghts and place in the checkpoints folder
+https://drive.google.com/drive/folders/1nsyxfwfQCCwNahumYxYH9Uu-Oa96P2X-?usp=sharing
 
 ### SDF Model
 First install the SDF model that helps us generate 3D mesh from pointcloud
