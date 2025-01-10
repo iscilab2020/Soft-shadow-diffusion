@@ -1,5 +1,5 @@
 <div align='center'>
-<h1>Soft Shadow Diffusion (SSD): Physics-inspired Learning for 3D Computational Periscopy</h1h1>
+<h1>Soft Shadow Diffusion (SSD): Physics-inspired Learning for 3D Computational Periscopy (ECCV 2024) </h1h1>
 <h3></h3>
 
 [Information Science and Computational Imaging Lab, University of South Florida](https://cse.usf.edu/~murraybruce/ISCI-Lab.html)
